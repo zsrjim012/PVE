@@ -1,0 +1,9 @@
+docker run -d \
+--name=wxedge \
+--restart=always \
+--privileged \
+--net=host \
+--tmpfs /run \
+--tmpfs /tmp \
+-v /volume1/4T/HD1/:/storage:rw \
+registry.cn-hangzhou.aliyuncs.com/onething/wxedge
